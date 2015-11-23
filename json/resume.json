@@ -1,0 +1,185 @@
+{
+  "sections":[
+    {
+	  "category": "Al Bueche IV",
+	  "content": []
+	},
+	{
+	  "category": "Objective",
+	  "content": [
+	    {
+		  "text":["Design, implement, and test user experience elements of meaningful software as part of a skilled team."], 
+	      "width": "100%"
+		}
+	  ]
+	},
+	{
+	  "category": "Work Experience",
+	  "content": [
+		{
+		  "title": "Software Engineer I at Northrop Grumman",
+		  "text":["December 2012 – Current"],
+		  "width": "50%"
+		},
+		{
+		  "image": "Northrop-Grumman_Logo.jpg",
+		  "width": "20%"
+		},
+	    {
+		  "text":["I design, implement, test, and improve on software components dealing with a wide variety of disciplines including networking, signal processing, data visualization, analytics, website design, and database management for mixed system solutions. I have crafted solutions in HTML5, JS, CSS3, Java, C++, and Python utilizing REST, JMS, AngularJS, Grails, GWT, OWF, JUNG, Maven, SQL, MongoDB, Git, Clearcase, and JIRA. While always willing to expand my knowledge base in order to best complete the task at hand, I have developed a specialization for front-end development, especially within a web environment." ],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Generalist Programmer / Owner at DoubleA Studios",
+		  "link": "../doubleA",
+		  "text":["March 2011 – December 2012"],
+		  "width": "50%"
+		},
+		{
+		  "image": "doublea.png",
+		  "link": "../doubleA",
+		  "width": "14%"
+		},
+		{
+		  "text":["A colleague and I created DoubleA Studios during our senior year of college. We gathered requirements, negotiated contracts, and designed, implemented, tested and delivered software for several local businesses. Our major, client-driven projects included a Java application utilizing MySQL and OpenGL, a C# application to read, manage, and display information from a website, and a client/server medical application written with Java Swing which was later ported to Android. During my time at DoubleA, I also created the majority of 'From Space...', with the help of ample design discussions with my business partner. As part of running a business, I was exposed to branding, customer relations, documentation, estimation, billing, and bureaucratic paperwork."],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Grader/Adjunct Instructor at CSU Sacramento",
+		  "text":["August 2010 – December 2011"],
+		  "width": "50%"
+		},
+		{
+		  "image": "sacState.png",
+		  "width": "21%"
+		},
+		{
+		  "text":["Over three semesters, I held several distinct positions at Sac State. I worked as an adjunct professor, teaching a 1-unit course in parallel with CSc15, Programming Concepts and Methodology. I graded assignments for both CSc133, Object-Oriented Computer Graphics Programming, and CSc136, Programming Languages. I also worked as a tutor, fielding all lower-division computer science questions, as well as assisting with some upper-division material. These roles gave me the opportunity to evaluate programming styles, practices and techniques, offer advice for improvement, and handle questions quickly and effectively."],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Twilight Lead at The Disney Store",
+		  "text":["September 2003 – January 2009"],
+		  "width": "50%"
+		},
+		{
+		  "image": "Disney-Store-logo.jpg",
+		  "width": "15%"
+		},
+		{
+		  "text":["I managed a team and took responsibility for visual marketing, guest relations, financial verification, and securing the store at night. I was also Responsible for accepting, processing, organizing, replenishing, off-siting, liquidating, donating, and transferring stock, along with all corresponding documentation. I was regularly expected to work dynamically with and without direction."],
+		  "width": "100%"
+		}
+	  ]
+	},
+	{
+	  "category": "Education",
+	  "content": [
+	    {"text":["Bachelor of Science, Computer Science"], "width":"30%"},
+		{"text":["CSU Sacramento"], "width":"30%"},
+		{"text":["January 4, 2012"], "width":"30%"}
+	  ]
+	},
+	{
+	  "category": "Projects",
+	  "content": [
+	    {
+		  "title": "Board Game AI ~ Gas Tank",
+		  "link": "gasTank",
+		  "text": ["Based on a college artificial intelligence assignment, this board game was created in my free time. The pieces in this game move similarly to chess. N moves like a knight, B moves like a bishop, K move like a king, and Q can move like a bishop or knight. Pieces, both enemy and friendly, can be captured by ending movement on their square. Each piece begins with 3 units of gas, and each movement requires 1 unit. Once a piece is out of gas, it can no longer move. Capturing a piece completely fills the gas tank, regardless of how much fuel either piece has. The game is won when the opponent's K is captured or the opponent has no valid moves. There is no such thing as check.", 
+		  "The game is built entirely in Javascript and executes a breadth-first search utilizing negamax with alpha-beta pruning and iterative deepening. It tracks the best moves chosen on each ply in order to presort and maximize the pruning opportunities. A single web worker handles the negamax algorithm in order to keep the UI responsive.", 
+		  "There are two heuristic settings to choose from. The first, named \"Dive\", simply awards points for each piece on the board; with a K worth significantly more than a Q, and a Q worth more then an N or B. On average, this heuristic allows 5 plies, and about 42,000 leaf nodes to be searched in the default 5 second time frame.", 
+		  "The second, named \"Threat\", starts with the same points per piece calculation, then adds additional points for threatening an enemy piece. This calculation takes considerably longer, averaging 4 plies and 10,000 leaf nodes in the default 5 seconds, but tends to play better."],
+		  "width": "65%"
+		},
+		{
+		  "image": "gasTank.png",
+		  "link": "gasTank",
+		  "width": "30%",
+		  "breakAfter": true
+		},
+		{
+		  "activeImage": "titleScreen.png",
+		  "link": "../fromSpace",
+		  "imageList": [
+		    "titleScreen.png",
+			"junkerInfo.png",
+			"saucerInfo.png",
+			"snailInfo.png",
+			"lawBaseInfo.png",
+			"junkerBaseInfo.png",
+			"saucerBaseInfo.png",
+			"shotCrateInfo.png",
+			"specialCrateInfo.png",
+			"minionCrateInfo.png",
+			"healthCrateInfo.png",
+			"hutInfo.png",
+			"bossInfo.png"
+		  ],
+		  "width": "55%"
+		},
+		{
+		  "title": "Indie XNA Game ~ ...From Space",
+		  "link": "../fromSpace",
+		  "text": ["'...From Space' was built as a side project on the XBox 360. The arcade-style, top-down spaceship game uses realistic AI allies to seamlessly allow players to join or drop. It offers a choice between three different races, each with a distinct play-style: the slow-moving space snails with temporary invulnerability and regeneration, the hi-tech, speedy saucers with instantaneous velocity changes and homing missiles, and the creative junkers with garbage-shield generators and makeshift turrets. A variety of power-ups can be obtained and upgraded, many of which differ based on race. Models were built in Blender and a simple scripting language was implemented to make adding content more efficient."], 
+		  "width": "35%",
+		  "breakAfter": true
+        },
+		{
+		  "title": "Desktop Client for Broadcast Communication Website ~ Mub",
+		  "text": ["'Mub' collects the requested posts from an online server and displays the most recent data. It was originally implemented to allow financial advisers to easily update all of their followers with timely advice, but has been extended in use for advertising. By request, it was created in C#, using Microsoft's .NET GUI API. While the system is no longer operational, the most recent version should still be available at www.mubbin.com"],
+		  "width": "65%"
+		},
+		{
+		  "image": "mub.png",
+		  "width": "30%",
+		  "breakAfter": true
+		},
+		{
+		  "image": "KelkomImage.png",
+		  "width": "30%"
+		},
+		{
+		  "title": "Office Management Software ~ Kelkom",
+		  "text": ["'Kelkom' was built in Java for Beaconsuite, LLC. It was designed to integrate with and match the look and feel of an existing hardware solution, with at-a-glance colored light indicators. It allows pages to be sent and tracked and queues to be managed and viewed from any of a number of stations positioned around the office. It produces reports of statistical usage information for both real-time display and archived logs. The software was updated to run on android devices."],
+		  "width": "65%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Crime Event Mapping System ~ CEMS",
+		  "text": ["Member of a five-student team documenting, designing and implementing a cell phone mapping program for the Sacramento Police Department's Homicide Division. The program dynamically maps call positions and times, while providing a user-friendly system to group related information."],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "3D Scene",
+		  "text": ["Built with Java, OpenGL and GLSL, this scene utilizes multiple textures, materials, and lighting to display lighting bugs circling a flower in a pot. Built for a school project, it uses motion blur, particle effects and normal mapping to add a sense of realism to the scene."],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Fantasy Novel ~ The Four (In Progress)",
+		  "goToPage": "theFour",
+		  "text": ["Since 2004, I have been slowly working on a fantasy novel in my free time. I take frequent breaks, sometimes as long as 2 years, but always seem to come back to it. It follows the collision of prophecy, ancient magic, four individuals picked by that magic, and a plethora of scheming opportunists."],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Financial Visualization (In progress)",
+		  "goToPage": "financials",
+		  "text": ["I created this visualizer to easily categorize and view my spending habits. It reads the CSV transaction history available from various financial websites (currently Wells Fargo and Chase). Once uploaded, transactions can be categorized either individually or by setting a search term on the description. Transactions can be filtered based on a time periods, and will be displayed both in a list format and in a bar chart by category."], 
+		  "width": "50%"
+		},
+		{
+		  "image": "financialVisualization.png",
+		  "goToPage": "financials",
+		  "width": "45%",
+		  "breakAfter": true
+        }
+	  ]
+	}
+  ]
+}

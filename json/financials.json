@@ -1,0 +1,30 @@
+{
+  "sections":[
+    {
+	  "category": "Financial Visualization",
+	  "content": [
+		{
+		  "text":[ "Details to be added..." ],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Download Financial Visualization (TODO)",
+		  "link": "",
+		  "width": "30%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "activeImage": "financialVisualization.png",
+		  "imageList": [
+		    "financialVisualization.png"
+		  ],
+		  "width": "95%",
+		  "center": true,
+		  "breakAfter": true
+		}
+	  ]
+	}
+  ]
+}

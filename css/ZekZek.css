@@ -1,0 +1,151 @@
+* {
+	transition: all 1s ease;
+}
+
+[class$="Wrapper"] div, [class$="Wrapper"] span{
+	transition: border-color 2.5s ease;
+	transition: opacity 2.5s ease;
+}
+
+.bodyHighlight {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	background: -webkit-linear-gradient(left top, #033 , #055 10%, #033 20%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #033 , #055 10%, #033 20%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #033 , #055 10%, #033 20%); /* For Firefox 3.6 to 15 */
+    background: repeating-linear-gradient(to bottom right, rgba(0,0,0,0) , rgba(0,0,0,0.6) 15%, rgba(0,0,0,0) 30%); /* Standard syntax (must be last) */
+}
+
+.resumeBlockHeader {
+	background-color: #0FF;
+}
+body.resume {
+	background-color: #066;
+}
+.resumeWrapper div, .resumeWrapper span, [class^="resumeBlock"]{
+	border-color: #044;
+}
+
+.financialsBlockHeader {
+	background-color: #0F0;
+}
+body.financials {
+	background-color: #060;
+}
+.financialsWrapper div, .financialsWrapper span, [class^="financialsBlock"]{
+	border-color: #040;
+}
+
+.fromSpaceBlockHeader {
+	background-color: #FF0;
+}
+body.fromSpace {
+	background-color: #660;
+}
+.fromSpaceWrapper div, .fromSpaceWrapper span, [class^="fromSpaceBlock"]{
+	border-color: #440;
+}
+
+.schmeshBlockHeader {
+	background-color: #F0F;
+}
+body.schmesh {
+	background-color: #606;
+}
+.schmeshWrapper div, .schmeshWrapper span, [class^="schmeshBlock"]{
+	border-color: #404;
+}
+
+.theFourBlockHeader {
+	background-color: #00F;
+}
+body.theFour {
+	background-color: #009;
+}
+.theFourWrapper div, .theFourWrapper span, [class^="theFour"]{
+	border-color: #006;
+}
+
+.clear {
+	clear:both;
+}
+
+div.lineBreak {
+	content: '';
+	width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+	display: inline-block;
+}
+
+div.contentWrapper {
+	text-align: justify;
+    width: 100%;
+}
+
+.content {
+	display: inline-block;
+	background: black;
+	color: white;
+	border: 1px solid;
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.contentHeader {
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 10%;
+	color: #FFF;
+}
+
+.resumeWrapper .contentHeader {
+}
+
+.menuItem {
+	cursor: pointer;
+}
+
+/*.menuItem:hover{
+	text-shadow: 0px 0px 15px #AAF, 0px 0px 15px #AAF, 0px 0px 20px #AAF;
+}*/
+
+.link {
+	cursor: pointer;
+	color: #55F;
+	text-decoration: underline;
+}
+
+img.link {
+	margin-left:-4px;
+	padding: 2px;
+	border: 2px outset #55F;
+}
+
+.link:hover {
+	text-shadow: 0px 0px 20px #FFF, 0px 0px 20px #AAF;
+}
+
+img.link:hover {
+	box-shadow: 0px 0px 15px #55F, 0px 0px 15px #55F;
+}
+
+.center {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.gallery-scroller {
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.gallery-scroller img {
+	height: 100px;
+}

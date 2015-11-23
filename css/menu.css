@@ -1,0 +1,113 @@
+body {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+body::after {
+  content: "";
+  background: url(../image/tile_circuit.png);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+[class$="Header"]{
+	position: fixed;
+	border: 1px solid;
+	margin-left: 10px;
+	width: 150px;
+}
+
+[class$="Menu"]{
+	position: fixed;
+	background: black;
+	top: 160px;
+	bottom:0px;
+	color: white;
+	border: 1px solid;
+	margin: 10px;
+	width: 150px;
+	overflow: auto;
+}
+
+div.contentPane {
+	margin-top: 10px;
+	margin-left: 170px; /* 150(menu) + 20(margin)*/
+	margin-right: 10px;
+}
+
+input[type=radio][class*="menuItem"]{
+	display: none;
+}
+
+input[type=radio][class*="menuItem"] + .menuItem {
+	position: relative;
+	top: -12px;
+}
+
+input[type=radio][class*="menuItem"] + .menuItem:before {
+	content:"";
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	border: none;
+	margin: 3px;
+	display: inline-block;
+	position: relative;
+	top: 12px;
+}
+
+input[type=radio][class*="menuItem"] + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #777 52%, #000 70%); /* Standard syntax */
+}
+
+input[type=radio][class*="menuItem"] + .menuItem:active:before {
+	background: radial-gradient(#999 10%, #666 25%, #000 35%, #777 52%, #000 70%); /* Standard syntax */
+}
+
+input[type=radio].menuItem-fromSpace:checked + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #FF3 52%, #000 70%); /* YELLOW Standard syntax */
+}
+
+input[type=radio].menuItem-resume:checked + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #3FF 52%, #000 70%); /* TEAL Standard syntax */
+}
+
+input[type=radio].menuItem-schmesh:checked + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #F3F 52%, #000 70%); /* MAGENTA Standard syntax */
+}
+
+input[type=radio].menuItem-financials:checked + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #3F3 52%, #000 70%); /* GREEN Standard syntax */
+}
+
+input[type=radio].menuItem-theFour:checked + .menuItem:before {
+	background: radial-gradient(#AAA 10%, #888 25%, #000 35%, #33F 52%, #000 70%); /* BLUE Standard syntax */
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  .header { display: none; }
+  div.menu { display: none; }
+  div.contentPane { margin: 10px;}
+  div.content { padding: 0px; margin: 0px; margin-bottom: 5px; border: none; }
+  div.contentHeader { padding-left: 5%; text-align: left; width: 88%; border: none; font-weight: bold; }
+  div.lineBreak { width: 0%; }
+  body { font-size: small; }
+}

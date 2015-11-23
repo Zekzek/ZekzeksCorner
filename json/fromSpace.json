@@ -1,0 +1,66 @@
+{
+  "sections":[
+    {
+	  "category": "From Space",
+	  "content": [
+		{
+		  "text":[ "...From Space is a retro, party-based game, built for the Xbox 360. It is set in space, and focuses on powering up yourself and your allies in order to work through a simple storyline. Up to four players may each choose a race and join the four-man team of heroes. NPCs will fill any open spots in the roster, and use AI to perform as powerful allies; dodging enemy shots and returning fire. At any point during play, players may replace or be replaced by an NPC, allowing the action to continue regardless of what's happening in real life. The races available in ...From Space have distinct differences in mobility, special abilities, and power-up progression, making for a unique play experience with each race while maintaining a good balance in their overall power levels." ],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Download From Space...",
+		  "link": "",
+		  "width": "30%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "text":[
+		    "The controls are still unintuitive in this windows translation:",
+			"",
+			"Menu Navigation:   Arrow keys",
+			"Menu Selection:    K",
+			"Menu Exit:         ESC",
+			"Ship movement:     AWSD",
+			"Ship rotation:     Number Pad",
+			"Fire bullet:       Space",
+			"Fire Special:      Enter",
+			"Start game(Y):     Enter",
+			"Pause:             Tilde(~)"
+		  ], 
+		  "width": "50%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "text": ["\"Space Law has an opening in their special, 4-ship task force and they need you! Join a diverse heritage of junkers, saucers, and space snails. See the world's sights and reap its rewards as you protect the innocent from the evils of the galaxy!\""], 
+		  "width": "80%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "activeImage": "titleScreen.png",
+		  "imageList": [
+		    "titleScreen.png",
+			"junkerInfo.png",
+			"saucerInfo.png",
+			"snailInfo.png",
+			"lawBaseInfo.png",
+			"junkerBaseInfo.png",
+			"saucerBaseInfo.png",
+			"shotCrateInfo.png",
+			"specialCrateInfo.png",
+			"minionCrateInfo.png",
+			"healthCrateInfo.png",
+			"hutInfo.png",
+			"bossInfo.png"
+		  ],
+		  "width": "95%",
+		  "center": true,
+		  "breakAfter": true
+		}
+	  ]
+	}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sections":[
+    {
+	  "category": "Schmesh",
+	  "content": [
+		{
+		  "text":[ "A chess-like boardgame based loosely on an old board game, Shmesh, and described by Professor Scott Gordon. The moves available to each piece are based on the board location rather than intrinsic to the piece itself. It battles the user with such AI algorithms as minimax, alpha-beta pruning, and iterative deepening. Written in C++, it went beyond the course requirements by utilizing Microsoft's API to develop a simple GUI." ],
+		  "width": "100%",
+		  "breakAfter": true
+		},
+		{
+		  "title": "Download Schmesh (TODO)",
+		  "link": "",
+		  "width": "30%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "text":["After unpacking, Schmesh.exe can be found inside. It is provided for demonstration use only as it is full of licensing infringement. Chocobos, Tarutarus, and sound effects are property of Square Enix"], 
+		  "width": "100%",
+		  "center": true,
+		  "breakAfter": true
+		},
+		{
+		  "image": "title.png", 
+		  "width": "25%"
+		},
+		{
+		  "image": "gameplayReg.png", 
+		  "width": "25%"
+		},
+		{
+		  "image": "gameplay.png", 
+		  "width": "25%"
+		}
+	  ]
+	}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+	  "name": "Resume",
+	  "value": "resume"
+	},
+	{
+	  "name": "Financials",
+	  "value": "financials"
+	},
+	{
+	  "name": "The Four",
+	  "value": "theFour"
+	},
+	{
+	  "name": "GitHub",
+	  "link": "https://github.com/Zekzek"
+	},
+	{
+	  "name": "DoubleA",
+	  "link": "../doubleA"
+	},
+	{
+	  "name": "Gas Tank",
+	  "link": "gasTank"
+	},
+	{
+	  "name": "...From Space",
+	  "link": "../fromSpace"
+	}
+  ]
+}

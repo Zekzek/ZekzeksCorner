@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="zekzekApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>ZekZek</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/ZekZek.css">
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/zekzekModule.js"></script>
+  </head>
+  <body id="body" ng-controller="zekzekCtrl" class="{{page.viewPage.value}}">
+    <div class="bodyHighlight"></div>
+    <img class="{{page.viewPage.value}}BlockHeader" src="image/zekzek.png"></img>
+    <div class="{{page.viewPage.value}}BlockMenu">
+      <span ng-repeat="pageItem in pageList" ng-if="pageItem.value" class="inputWrapper">
+        <input type="radio"
+          class="menuItem-{{page.viewPage.value}}"
+          name="viewPage"
+          ng-model="page.viewPage"
+          ng-value="pageItem"
+        ></input>
+        <label class="menuItem"
+          ng-click="page.viewPage = pageItem"
+        >{{pageItem.name}}</label>
+        <br class="clear">
+        <div ng-if="page.viewPage == pageItem && page.viewPage.json.sections.length > 1" class="center">
+          <div ng-repeat="section in page.viewPage.json.sections">
+            <a href="#{{section.category}}">{{section.category}}</a>
+          </div>
+        </div>
+      </span>
+      
+      <hr>
+      
+      <span ng-repeat="pageItem in pageList" ng-if="pageItem.link" class="inputWrapper">
+        <input type="radio"
+          class="menuItem-{{page.viewPage.link}}"
+          name="viewPage"
+        ></input>
+        <a class="menuItem"
+          ng-attr-href="{{pageItem.link}}"
+        >{{pageItem.name}}</a>
+        <br class="clear">
+      </span>
+    </div>
+    <div class="contentPane {{page.viewPage.value}}Wrapper">
+      <div class="contentWrapper">
+        <div ng-repeat="section in page.viewPage.json.sections" class="contentWrapper">
+          <div ng-if="section.category.length > 0" ng-attr-id="{{section.category}}" class="content contentHeader">
+            {{section.category}}
+          </div>
+          <div class="lineBreak"></div>
+          <span ng-if="!section.hide" ng-repeat="contentItem in section.content" class="{{contentItem.center ? 'center' : ''}}">
+            <span class="content" style="max-width:{{contentItem.width}}">
+              <div ng-if="contentItem.title"
+                class="{{contentItem.goToPage || contentItem.link ? 'link' : ''}}"
+                ng-click="linkTo(contentItem.goToPage, contentItem.link)">
+                <b>{{contentItem.title}}</b>
+                <div ng-if="contentItem.text" class="lineBreak"></div>
+              </div>
+              <img ng-if="contentItem.image" 
+                width="100%" 
+                class="{{contentItem.goToPage || contentItem.link ? 'link' : ''}}"
+                ng-click="linkTo(contentItem.goToPage, contentItem.link)"
+                ng-attr-src="image/{{contentItem.image}}">
+              </img>
+              <img ng-if="contentItem.imageList" 
+                width="100%" 
+                ng-attr-src="image/{{contentItem.activeImage}}">
+              </img>
+              <div ng-if="contentItem.imageList" 
+                  class="gallery-scroller" style="width:100%">
+                <img ng-repeat="imageIcon in contentItem.imageList" class="content" ng-attr-src="image/{{imageIcon}}" ng-click="contentItem.activeImage=imageIcon"></img>
+              </div>
+              <span ng-if="contentItem.text" ng-repeat="paragraph in contentItem.text track by $index">
+                {{paragraph}}<br><br ng-if="!$last">
+              </span>
+            </span>
+            <div ng-if="contentItem.breakAfter" class="lineBreak"></div>
+          </span>
+          <div class="lineBreak"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+ </html>
